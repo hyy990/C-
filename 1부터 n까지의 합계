@@ -1,0 +1,12 @@
+ static void Main_003(string[] args)
+ {
+     Console.Write("n:");
+     string s=Console.ReadLine();
+     int n = int.Parse(s);
+     int sum = 0;
+     for(int i=1;i<=n ;i++ )
+     {
+         sum += i;
+         //Console.WriteLine(i);
+     }Console.WriteLine(sum);
+ }
