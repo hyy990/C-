@@ -1,0 +1,46 @@
+        static int MonthDaysSwitch2(int m)
+        {
+            switch (m)
+            {
+                case 2:
+                    return 28;
+                    //break 의미없는 break
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    return 30;
+            }
+            return 31;
+        }
+
+        static int MonthDaysIf(int m) {
+
+            if (m == 2) 
+                return 28;
+            if (m == 4 || m==6 || m==9 || m==11 ) 
+                return 30;
+            return 31;
+        }
+
+        static Char Weekday(int d)
+        {
+            if (d < 1 || d > 7)
+                return ' ';
+            string s = "월화수목금토일";
+            return s[d - 1];
+        }
+        static string Weekday2(int d)
+        {
+            if (d < 1 || d > 7)
+                return "";
+            string[] s = {
+                "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일" };
+            return s[d - 1];
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Weekday(6));
+            Console.WriteLine(Weekday2(1));
+        }
