@@ -1,0 +1,19 @@
+        static void Main(string[] args)
+        {
+            int input;
+            Console.Write("정수 값을 입력하세요:");
+            input = int.Parse(Console.ReadLine());
+            switch (input%3)
+            {
+                case 0:
+                    Console.WriteLine("3의 배수입니다.");
+                    break;
+                case 1:
+                    Console.WriteLine("나머지 1이 있어요.");
+                    break;
+                case 2:
+                    Console.WriteLine("나머지 2가 있어요.");
+                    break;
+                
+            }
+        }
