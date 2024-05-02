@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @today
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            if (DateTime.Now.Month < 7 ) {
+                Console.WriteLine("아직 늦지 않았어!");
+            }
+            else
+            {
+                Console.WriteLine("내년을 기약하자");
+            }
+        }
+    }
+}
