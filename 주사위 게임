@@ -1,0 +1,61 @@
+            int dice1, dice2;
+            string player1, player2;
+            Console.Write("이름을 입력해주세요:");
+            player1 = Console.ReadLine();
+            Console.Write("이름을 입력해주세요:");
+            player2 = Console.ReadLine();
+
+            Random rand = new Random();
+            dice1 = rand.Next(6)+1;
+            dice2 = rand.Next(6)+1;
+
+            switch (dice1)
+            {
+                case 1:
+                    Console.WriteLine(player1+"주사위는 1이 나왔습니다.");
+                    break;
+                case 2:
+                    Console.WriteLine(player1 + "주사위는 2가 나왔습니다.");
+                    break;
+                case 3:
+                    Console.WriteLine(player1 + "주사위는 3이 나왔습니다.");
+                    break;
+                case 4:
+                    Console.WriteLine(player1 + "주사위는 4가 나왔습니다.");
+                    break;
+                case 5:
+                    Console.WriteLine(player1 + "주사위는 5가 나왔습니다.");
+                    break;
+                case 6:
+                    Console.WriteLine(player1 + "주사위는 6이 나왔습니다.");
+                    break;
+            }
+            switch (dice2)
+            {
+                case 1:
+                    Console.WriteLine(player2 + "주사위는 1이 나왔습니다.");
+                    break;
+                case 2:
+                    Console.WriteLine(player2 + "주사위는 2가 나왔습니다.");
+                    break;
+                case 3:
+                    Console.WriteLine(player2 + "주사위는 3이 나왔습니다.");
+                    break;
+                case 4:
+                    Console.WriteLine(player2 + "주사위는 4가 나왔습니다.");
+                    break;
+                case 5:
+                    Console.WriteLine(player2 + "주사위는 5가 나왔습니다.");
+                    break;
+                case 6:
+                    Console.WriteLine(player2 + "주사위는 6이 나왔습니다.");
+                    break;
+            }
+            if (dice1 == dice2)
+            {
+                Console.WriteLine("비겼습니다.");
+            }
+            else
+            {
+                Console.WriteLine(dice1 > dice2 ? player1 + "Win" : player2 + "win");
+            }
