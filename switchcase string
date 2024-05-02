@@ -1,0 +1,21 @@
+        static void Main(string[] args)
+        {
+            string input;
+            Console.Write("값을 입력하세요(a,w,d,s):");
+            input = Console.ReadLine();
+            switch (input)
+            {
+                case "a":
+                    Console.WriteLine("a가 입력되었습니다.");
+                    break;
+                case "w":
+                    Console.WriteLine("w가 입력되었습니다.");
+                    break;
+                case "d":
+                    Console.WriteLine("d가 입력되었습니다.");
+                    break;
+                case "s":
+                    Console.WriteLine("s가 입력되었습니다.");
+                    break;
+            }
+        }
